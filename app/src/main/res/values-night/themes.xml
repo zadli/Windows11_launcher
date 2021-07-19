@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="BaseLauncherTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <style name="LauncherTheme" parent="@style/BaseLauncherTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#212121</item>
+    </style>
+
+    <style name="Theme.Windows11Launcher" parent="LauncherTheme"/>
+</resources>
